@@ -1,0 +1,53 @@
+.breadcumb-inner h2 {
+    font-size: 36px;
+}
+.breadcumb-area {
+   padding-top: 154px;
+   padding-bottom: 153px;
+   background-size: cover;
+   background-position: center top;
+   background-color: rgb(227,227,227);
+   /* background-image: url("https://gatewayqatar.com/DevOps/wp-content/uploads/2021/04/8-IT-Solutions.jpg"); */
+   height: 100px;
+   position: relative;
+}
+.breadcumb-area:before, .breadcumb-blog-area:before {
+   position: absolute;
+   left: 0;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   content: "";
+   background: rgba(0,0,0,0);
+}
+.breadcumb-inner ul, .breadcumb-inner ul span a, .breadcumb-inner li, .breadcumb-inner li a {
+   color: #ffffff;
+}
+.breadcumb-inner li {
+   display: inline-block;
+   margin: 0;
+   color: black;
+}
+.breadcumb-inner li:nth-last-child(-n+1) {
+   color: black;
+}
+.breadcumb-inner li a {
+   color: black;
+}
+.breadcumb-inner li a:hover {
+   color: #ff5f63;
+}
+.brpt h2 {
+   font-size: 40px;
+   color: black;
+   margin-bottom: 15px;
+}
+.lcase {
+    text-transform: lowercase;
+}
+.ucase {
+    text-transform: uppercase;
+}
+.ccase {
+    text-transform: capitalize;
+}

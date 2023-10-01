@@ -1,0 +1,110 @@
+.testimonial-slider {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .testimonial {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  .testimonial .image {
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .slide p {
+    text-align: center;
+    padding: 0 160px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+  }
+  
+  .slide .quote-icon {
+    font-size: 30px;
+    color: #4070f4;
+  }
+  
+  .slide .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .details .name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .details .job {
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+  }
+  .testimonial:last-child {
+    border-bottom: none;
+  }
+  
+  .testimonial-text {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-name {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .slider-controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  .slider-control-button {
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+  }
+  
+  .slider-control-button.prev {
+    transform: rotate(180deg);
+  }
+  
+  .slider-control-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Animation */
+  .testimonial {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: slideIn 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

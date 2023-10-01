@@ -1,0 +1,309 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Order form</title>
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0" name="viewport">
+	<link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min-1.css">
+	<link rel="stylesheet" href="j-folder/css/demo-1.css">
+	<link rel="stylesheet" href="j-folder/css/font-awesome.min-1.css">
+	<link rel="stylesheet" href="j-folder/css/j-forms-1.css">
+<link rel="stylesheet" type="text/css" href="sweetalert/dist/sweetalert-1.css">
+   <link rel="stylesheet" type="text/css" href="css/validate-1.css">
+	<script src="j-folder/js/jquery.1.11.1.min-1.js"></script>
+	<script src="j-folder/js/jquery.ui.min-1.js"></script>
+	<script src="j-folder/js/jquery.maskedinput.min-1.js"></script>
+	<script src="j-folder/js/jquery.validate.min-1.js"></script>
+	<script src="j-folder/js/additional-methods.min-1.js"></script>
+	<script src="j-folder/js/jquery.form.min-1.js"></script>
+	<script src="j-folder/js/j-forms-1.js"></script>
+	<script src="j-folder/js/jquery.multiple.select-1.js"></script>
+	
+	<script src='../../../www.google.com/recaptcha/api.js'></script>
+</head>
+<body class="">
+	<div class="wrapper wrapper-640">
+	<form class="j-forms" id="myForm" action="mail.php" method="post">
+		<!--<form  method="post" class="j-forms" action="mail.php" enctype="multipart/form-data">-->
+			<div class="content">
+				
+				<div class="j-row">
+					<div class="span6 unit">
+						<div class="input">
+							<label class="icon-right" for="name">
+								<i class="fa fa-user"></i>
+							</label>
+							   <input type="text" class="form-control" id="name" name="fullname" placeholder="Full Name" required="">
+                       
+                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                        <div class="help-block with-errors"></div>
+						</div>
+					</div>
+										<div class="span6 unit">
+						<div class="input">
+							<label class="icon-right" for="phone">
+								<i class="fa fa-phone"></i>
+							</label>
+						             <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Mobile Number" required="">
+                      
+                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                        <div class="help-block with-errors"></div>
+						</div>
+					</div>
+					
+				</div>
+				<!-- end name -->
+
+				<!-- start email phone -->
+				<div class="j-row">
+					<div class="span6 unit">
+						<div class="input">
+							<label class="icon-right" for="email">
+								<i class="fa fa-envelope-o"></i>
+							</label>
+							              <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" required="">
+                       
+                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                        <div class="help-block with-errors"></div>
+						</div>
+					</div>
+					
+							<div class="span6 unit">
+						<div class="input">
+							<label class="icon-right" for="city">
+								<i class="fa fa-address-card-o"></i>
+							</label>
+							              <input type="text" class="form-control" id="city" name="city" placeholder="Area & City" required="">
+                       
+                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                        <div class="help-block with-errors"></div>
+						</div>
+					</div>
+
+				</div>
+				<!-- end email phone -->
+
+			<!--	<div class="divider gap-bottom-25"></div> -->
+
+				<div class="j-row">
+					<div class="span6 unit"><!-- start service -->
+						<label class="input select">
+							<select name="selectyourbusiness[]" autocomplete="off" class="services">
+								<option>Select Requirement</option>
+								<option value="Digital Marketing">Digital Marketing</option>
+								<option value="SEO Work">SEO Work</option>
+								<option value="Social Media Promotion">Social Media Promotion</option>
+								<option value="Website Development">Website Development</option>
+								<option value="Web Hosting">Web Hosting </option>
+								<option value="Internship Training">Internship Training</option>
+								<option value="SEO Training">SEO Training</option>
+								<option value="Social Media Training">Social Media Training</option>
+								
+                                	<option value="Others">Others</option>
+							
+							</select>
+							<i></i>
+						</label>
+					</div><!-- end service -->
+			
+					
+					
+				
+				</div>
+				
+		
+                
+                
+                	<div class="j-row others" style="display:none">
+					<div class="span6 unit">
+				    				    
+ <input type="email" class="form-control" id="others" name="others" required="">
+					</div>
+				
+				</div>
+
+				<!-- start response from server -->
+				
+				<!-- end response from server -->
+				
+					
+				<button class="submit-button primary-btn contact-button" name="formsubmit" style="float: right;">Submit</button>	
+  <!--<input type="submit" name="formsubmit" value="Submit" class="submit-button primary-btn contact-button">-->
+			
+
+			</div>
+			<!-- end /.content -->
+			
+	
+
+
+		</form>
+	</div>
+
+
+    <script src="../../ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min-1.js"></script>
+   <script type="text/javascript" src="js/bootstrap-3.3.2.min-1.html"></script>
+  <script type="text/javascript" src="js/validator-1.js"></script>
+ <script type="text/javascript" src="js/jquery.validate.min-1.js"></script> 
+   <script type="text/javascript" src="sweetalert/dist/sweetalert.min-1.js"></script> 
+    
+    
+        <script>
+        $(document).ready(function(){
+       
+       
+$('.services').change(function(){
+  if($(this).val() == 'Others'){
+  $('.others').show();
+  }
+    else{
+         $('.others').hide();
+    }
+});
+
+        })
+        
+	// Multiple select
+	$('#multiple_select').multipleSelect({
+		placeholder: "select services",
+	});
+	// Multiple select with search
+	$('#multiple_select_search').multipleSelect({
+		placeholder: "select country",
+		filter: true,
+		selectAll: false
+	});
+	
+	</script>
+
+    <script type="text/javascript">
+   //$("#contact_form").validate();
+    $(function() {
+    $("#contactform").validate({
+        rules: {
+            fullname: {
+                required: true,
+                minlength: 3,
+            },
+
+            services: {
+                required: true,
+
+            }, 
+			
+			selectyourbusiness: {
+                required: true,
+
+            },
+			
+            message: {
+                required: true,
+                minlength: 10,
+            
+            },
+            mobile: {
+                required: true,
+                number: true,
+                minlength: 10,
+             
+            },
+			city:{
+                required: true,
+               
+            }
+
+        },
+        messages: {
+            mobile: {
+                required: "Please Enter Mobile Number",
+                number: "Only Numerics are Allowed",
+                minlength: "Please enter atleast 10 Numbers",
+                maxlength: "Maximum 15 Numbers are allowed",
+            },
+            email: {
+                required: "Please Enter Email Id"
+            },
+            companyname: {
+                required: "Please Enter Company Name"
+            }, 
+			
+			selectyourbusiness: {
+                required: "Please Select your business"
+            },
+			city:
+			{
+			required: "Please Enter City"
+			},
+			slectmonthlybydget: {
+                required: "Please Select your Monthly Budget"
+            },
+
+            message: {
+                required: "Please Enter Message",
+                maxlength: "Please enter atleast 10 characters"
+            },
+            fullname: {
+                required: "Please Enter Full Name",
+                minlength: "Please enter atleast 3 characters"
+            }
+
+        },
+     submitHandler: function(form) {
+            $.ajax({
+                type: "POST",
+                url: $('#contactform').attr('ajaxurl'),
+                data: $('#contactform').serialize(),
+            }).done(function(data) {
+
+                if (data.trim() == 'success') {
+                swal({ 
+                    title: "Mail Sent Successfully",
+                     text: "Thank you, Will get back to you Shortly",
+                      type: "success" 
+                    },
+                    function(){
+                      window.location.href = 'index.html';
+                  });
+                }
+                else
+                    {
+                     swal({ 
+                    title: "Mail Not Sent Successfully",
+                     text: "Please Try Again",
+                      type: "error" 
+                    },
+                    function(){
+                          location.reload(true);
+                  });   
+                    }
+            });
+            return false;
+        }
+    });
+});
+   function StopNonInt(e)
+   {
+   var r=e.which?e.which:event.keyCode;
+   return r>31&&(48>r||r>57)?!1:void 0
+   }
+   function contactform1() {
+    alert('Hiii');return false;
+    $.ajax({
+        type: "POST",
+        url: $('#contactform').attr('ajaxurl'),
+        data: $('#contactform').serialize(),
+    }).done(function(data) {
+
+        if (data.trim() == 'success') {
+            $(".hiding").css('display', 'block');
+        }
+    });
+    return false;
+}
+   </script>   
+    
+</body>
+
+
+</html>

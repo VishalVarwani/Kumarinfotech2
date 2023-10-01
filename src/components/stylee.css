@@ -1,0 +1,28 @@
+/* {start of ecommerce css} */
+.brand-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.brand-logo {
+  margin: 10px;
+  flex-basis: calc(33.33% - 10px); /* Distribute items evenly in a row */
+  max-width: calc(33.33% - 10px); /* Limit maximum width of each item */
+}
+
+.brand-logo img {
+  width: 160px;
+  height: 160px;
+  object-fit: contain; /* Adjust the object-fit property to control how the image fits */
+
+}
+
+@media (max-width: 700px) {
+  .brand-logo img {
+    width: 80px; /* Adjust the width for smaller screens */
+    height: 80px; /* Adjust the height for smaller screens */
+  }
+}
+/* {end of ecommerce css} */

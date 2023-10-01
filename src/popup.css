@@ -1,0 +1,64 @@
+/* PopupForm.css */
+
+.popup-container {
+  text-align: center;
+  position: relative;
+}
+@media (max-width:380px) {
+  .menuu{
+
+    display: none;
+  }
+
+}
+.open-button {
+  padding: 10px 20px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-left: 40px;
+}
+.hidden {
+  top: -80px;
+}
+.navbar {
+  position: fixed;
+  top: -80px; /* Move it off-screen initially */
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  height: 80px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: top 0.3s ease-in-out; /* Add smooth transition effect */
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure the popup appears on top */
+}
+
+.popup-content {
+  width: 40%;
+
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #ccc;
+  border: none;
+  cursor: pointer;
+}

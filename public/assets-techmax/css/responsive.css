@@ -1,0 +1,565 @@
+/*****************************************************************
+    Template Name    : Free Techmax - IT Solutions & Technology HTML5 Website Template
+    Author           : Barakah Themes
+    Version          : 1.0
+    Created          : 2021
+    File Description : Main Responsive file of the template
+*****************************************************************/
+
+@media only screen and (max-width: 767px) {
+
+	.section-title h2 {
+		font-size: 30px;
+	}
+
+	.section-title h3 {
+		font-size: 26px;
+		margin: 5px 0 0 0;
+	}
+
+	.default-btn-one {
+		margin-right: 0;
+	}
+
+	.other-option {
+		display: none;
+	}
+	.purchase-container.nav-1 {
+		display: none;
+	}
+	.frtechmax-responsive-nav {
+		display: block;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.navbar-area {
+		padding-top: 0;
+		padding-bottom: 0;
+		-webkit-box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.11);
+		box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.11);
+	}
+	.navbar-area.is-sticky {
+		padding-top: 0;
+		padding-bottom: 0;
+		-webkit-box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.11);
+		box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.11);
+	}
+
+	.navbar-area.is-sticky .frtechmax-responsive-nav .mean-container a.meanmenu-reveal {
+		padding-top: 6px;
+		color: #000000;
+	}
+
+	.navbar-area.is-sticky .frtechmax-responsive-nav .mean-container a.meanmenu-reveal span {
+		background: #000000;
+	}
+
+	.mean-container .mean-nav {
+		margin-top: 43px;
+	}
+
+	.frtechmax-responsive-nav .mean-container a.meanmenu-reveal {
+		padding-top: 8px;
+		color: #fff;
+	}
+
+	.frtechmax-responsive-nav.index-navber-responsive .mean-container a.meanmenu-reveal span {
+		background: #333;
+	}
+	.frtechmax-responsive-nav .mean-container a.meanmenu-reveal span {
+		background: #fff;
+	}
+
+	.home-area {
+		height: 100%;
+		padding-top: 150px;
+		padding-bottom: 100px;
+		background-position: 60%;
+	}
+	.main-banner-content {
+		text-align: center;
+		padding-top: 50px;
+		margin: 0 auto;
+		max-width: none;
+	}
+
+	.main-banner-content h1 {
+		font-size: 32px;
+		margin: 0 0 18px 0;
+	}
+
+	.main-banner-content .banner-btn {
+		margin-top: 25px;
+	}
+	
+	.main-banner-content .banner-btn a {
+		margin: 0 5px;
+	}
+	.home-area .banner-image {
+		text-align: center;
+		padding-top: 35px;
+	}
+	.about-content {
+		margin-right: 0;
+	}
+
+	.about-content-text h2 {
+		font-size: 25px;
+	}
+	.about-image {
+		text-align: center;
+		margin-top: 35px;
+		margin-right: 0;
+	}
+	.about-image:before {
+		display: none;
+	}
+	.about-image img {
+		box-shadow: none;
+	}
+	.blog-image img {
+		width: 100%;
+	}
+
+	.blog-item .single-blog-item {
+		padding: 20px 16px;
+	}
+
+	.blog-item .single-blog-item .blog-list i::before {
+		font-size: 12px;
+	}
+
+	.partner-title {
+		margin-bottom: 30px;
+	}
+
+	.partner-title span {
+		font-size: 15px;
+	}
+
+	.partner-title h3 {
+		font-size: 26px;
+		margin: 5px 0 0 0;
+	}
+
+	.partner-list .partner-item {
+		-ms-flex: 0 0 50%;
+		-webkit-box-flex: 0;
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+
+	.partner-list .partner-item:nth-child(6) {
+		margin-left: 0;
+	}
+	.newsletter-form button {
+	    position: relative;
+		width: 100%;
+		border-radius: 30px;
+		margin-top: 15px;
+	}
+
+	.overview-content span {
+		font-size: 15px;
+	}
+
+	.overview-content h2 {
+	    font-size: 25px;
+		margin: 0px 0 15px 0;
+	}
+
+	.overview-content .features-list-1 li,
+	.overview-content .features-list li {
+		-ms-flex: 0 0 100%;
+		-webkit-box-flex: 0;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.overview-image {
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	.overview-image-2 {
+		text-align: center;
+		margin-top: 35px;
+	}
+	.single-counter {
+		padding: 15px 0;
+	}
+	.single-testimonial {
+		padding: 30px 10px;
+	}
+
+	.hire-content h2 {
+		font-size: 35px;
+	}
+	.hire-content p {
+		font-size: 15px;
+	}
+	.hire-content .hire-btn .hire-btn-one {
+		margin-left: 0;
+	}
+	
+	.partner-list .partner-item a {
+		padding: 0px 15px;
+	}
+	
+	.contact-info-box {
+		margin-bottom: 50px;
+	}
+	.page-title-area {
+		height: 300px;
+	}
+
+	.page-title-content h2 {
+		font-size: 35px;
+	}
+
+	.page-title-content ul {
+		margin-top: 6px;
+	}
+
+	.single-footer-widget {
+		padding: 15px 0;
+	}
+	
+	.single-footer-widget .footer-heading {
+		margin-bottom: 20px;
+	}
+
+	.single-footer-widget .footer-heading h2 {
+		font-size: 22px;
+	}
+
+	.single-footer-widget .footer-social {
+		margin-bottom: 20px;
+	}
+
+	.footer-quick-links li:last-child {
+		padding-bottom: 25px;
+	}
+
+	.copyright-area {
+		text-align: center;
+	}
+
+	.copyright-area ul {
+		text-align: center;
+	}
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+	.footer-quick-links li:last-child {
+		padding-bottom: 0;
+	}
+
+	.project-image img {
+		width: 100%;
+	}
+
+	.home-area {
+		height: 100%;
+		padding-top: 150px;
+		padding-bottom: 100px;
+		background-position: center;
+	}
+	
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+	.page-title-content h2 {
+		font-size: 32px;
+	}
+	.banner-btn .default-btn-one {
+		margin-bottom: 10px;
+	}
+	.purchase-container {
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.purchase-container .purchase-button .default-btn-one {
+		font-size: 15px;
+		padding: 7px 25px;
+		margin-top: 10px;
+		margin-left: 0;
+	}
+	.main-banner-content .banner-btn a {
+		margin: 5px 5px;
+	}
+	.hire-content h2 {
+		font-size: 32px;
+	}
+	.partner-list .partner-item a {
+		padding: 0px 0px;
+	}
+	.newsletter-form button {
+		position: relative;
+		margin-top: 25px;
+		border-radius: 5px;
+		display: block;
+		width: 100%;
+	}
+	.about-content {
+		margin-right: 0;
+	}
+	.about-content-text h2 {
+		font-size: 25px;
+	}
+	.partner-list .partner-item {
+		-ms-flex: 0 0 100%;
+		-webkit-box-flex: 0;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.contact-info-box {
+		margin-bottom: 50px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.section-title span {
+		font-size: 15px;
+	}
+
+	.section-title h3 {
+		font-size: 26px;
+		margin: 5px 0 0 0;
+	}
+	.page-title-content {
+		text-align: center;
+		margin-top: 100px;
+	}
+	.other-option {
+		display: none;
+	}
+	.frtechmax-responsive-nav {
+		display: block;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.navbar-area {
+		padding-top: 0;
+		padding-bottom: 0;
+		-webkit-box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.11);
+		box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.11);
+	}
+	.navbar-area.is-sticky {
+		padding-top: 0;
+		padding-bottom: 0;
+		-webkit-box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.11);
+		box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.11);
+	}
+
+	.navbar-area.is-sticky .frtechmax-responsive-nav .mean-container a.meanmenu-reveal {
+		padding-top: 6px;
+		color: #000000;
+	}
+
+	.navbar-area.is-sticky .frtechmax-responsive-nav .mean-container a.meanmenu-reveal span {
+		background: #000000;
+	}
+
+	.mean-container .mean-nav {
+		margin-top: 43px;
+	}
+
+	.frtechmax-responsive-nav .mean-container a.meanmenu-reveal {
+		padding-top: 6px;
+		color: #fff;
+	}
+
+	.frtechmax-responsive-nav.index-navber-responsive .mean-container a.meanmenu-reveal span {
+		background: #333;
+	}
+	.frtechmax-responsive-nav .mean-container a.meanmenu-reveal span {
+		background: #fff;
+	}
+
+	.home-area {
+		padding-top: 170px;
+		padding-bottom: 100px;
+		background-position: 50%;
+		height: 100%;
+	}
+	.home-area .banner-image {
+		text-align: center;
+		padding-top: 40px;
+	}
+	.main-banner-content {
+		margin: auto;
+		text-align: center;
+		padding-top: 100px;
+	}
+
+	.main-banner-content h1 {
+		font-size: 35px;
+		margin: 0 0 15px 0;
+	}
+
+	.main-banner-content .banner-btn {
+		margin-top: 20px;
+	}
+
+	.about-content {
+		margin-right: 0;
+	}
+
+	.about-content-text h2 {
+		font-size: 33px;
+	}
+	.about-image {
+		text-align: center;
+		margin-top: 35px;
+		margin-right: 0;
+	}
+	.about-image:before {
+		display: none;
+	}
+	.about-image img {
+		box-shadow: none;
+	}
+	.blog-image img {
+		width: 100%;
+	}
+
+	.blog-item .single-blog-item {
+		padding: 20px 16px;
+	}
+
+	.blog-item .single-blog-item .blog-content h3 {
+		font-size: 18px;
+	}
+	.partner-title {
+		margin-bottom: 30px;
+	}
+
+	.partner-list .partner-item {
+		-ms-flex: 0 0 50%;
+		-webkit-box-flex: 0;
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+
+	.partner-list .partner-item:nth-child(6) {
+		margin-left: 0;
+	}
+	.overview-content span {
+		font-size: 15px;
+	}
+
+	.overview-content h2 {
+		font-size: 30px;
+		margin: 5px 0 8px 0;
+	}
+
+	.overview-image {
+		margin-bottom: 35px;
+		text-align: center;
+	}
+	.overview-image-2 {
+		text-align: center;
+		margin-top: 35px;
+	}
+	.single-counter {
+		padding: 15px 0;
+	}
+	.hire-content h2 {
+		font-size: 33px;
+	}
+	.hire-content p {
+		font-size: 15px;
+	}
+	.partner-list .partner-item a {
+		padding: 0px 50px;
+	}
+	.contact-info-box {
+		margin-bottom: 50px;
+	}
+	.page-title-area {
+		height: 300px;
+	}
+
+	.page-title-content h2 {
+		font-size: 35px;
+	}
+
+	.page-title-content ul {
+		margin-top: 6px;
+	}
+
+	.single-footer-widget {
+		padding: 15px 0;
+	}
+
+	.single-footer-widget .footer-heading {
+		margin-bottom: 12px;
+	}
+
+	.single-footer-widget .footer-heading h2 {
+		font-size: 22px;
+	}
+
+	.single-footer-widget .footer-social {
+		margin-bottom: 20px;
+	}
+
+	.footer-quick-links li:last-child {
+		padding-bottom: 25px;
+	}
+
+	.copyright-area {
+		text-align: left;
+	}
+
+	.copyright-area ul {
+		text-align: right;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.navbar-light .navbar-brand {
+		position: relative;
+		margin-left: 0;
+		margin-right: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+		top: 0;
+		left: 0;
+	}
+
+	.navbar-area.is-sticky .navbar-light .navbar-brand {
+		position: relative;
+		margin-left: 0;
+		margin-right: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+		top: 0;
+		left: 0;
+	}
+	
+	.about-content-text h2 {
+		font-size: 30px;
+	}
+
+	.testimonial-slider.owl-theme .owl-nav [class*=owl-] {
+		left: 0;
+	}
+
+	.testimonial-slider.owl-theme .owl-nav [class*=owl-].owl-next {
+		right: 0;
+	}
+
+	.blog-item .single-blog-item {
+		padding: 20px 16px;
+	}
+
+	.overview-content .features-list li span.active {
+		color: #fff;
+		padding-left: 15px;
+	}
+
+	.single-footer-widget .footer-heading h3 {
+		font-size: 18px;
+	}
+}
